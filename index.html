@@ -171,17 +171,19 @@
                     mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
                     seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
                     snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-                    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+                    document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
                     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
                 } 
             setInterval("createtime()",250);
             </script>
         </div>
 
-        <div style="margin:0 auto; height: 20px;">  <!--备案代码-->
-
-            <img src="http://pm.how2j.online/beian.png" style="height: 20px;"/>
-            <a target="_blank" href="http://www.beian.gov.cn/portal/index" style="display:inline-block; height:20px;line-height:20px"><p style="height:20px;line-height:20px;margin: 0px 0px 0px 5px;">渝ICP备20001554号</p></a>
+        <div style="margin:0 auto; height: 20px; line-height:20px; width: 164px;">  <!--备案代码-->
+            <img src="http://pm.how2j.online/beian.png" style="float: left; height: 20px; line-height:20px"/>
+            
+            <a target="_blank" href="http://www.beian.gov.cn/portal/index" style="display:inline-block; height:20px;line-height:20px">
+                <p style="height:20px;line-height:20px;margin: 0px 0px 0px 5px;">渝ICP备20001554号</p>
+            </a>
             <!-- <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022802000393" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
                 <img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">渝公网安备 50022802000393号</p>
             </a> -->
