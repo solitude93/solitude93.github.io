@@ -1,171 +1,38 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% extends '_layout.swig' %}
+{% import '_macro/post-collapse.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-    <meta name="author" content="solitude93">
+{% block title %}{{ __('title.category') }}: {{ page.category }} | {{ config.title }}{% endblock %}
 
+{% block content %}
 
-    <meta name="subtitle" content="No Princess">
+  {######################}
+  {### CATEGORY BLOCK ###}
+  {######################}
+  <div class="post-block category">
 
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <{% if theme.seo %}h2{% else %}h1{% endif %}>{#
+        #}{{ page.category }}{#
+        #}<small>{{  __('title.category')  }}</small>
+        </{% if theme.seo %}h2{% else %}h1{% endif %}>
+      </div>
 
-    <meta name="description" content="学习，生活，分享">
-
-
-    <meta name="keywords" content="HTML, CSS, JavaScript, JQuery, React, Vue.js">
-
-
-<title>category | 小二的博客</title>
-
-
-
-    <link rel="icon" href="/web23.ico">
-
-
-
-
-    <!-- stylesheets list from _config.yml -->
-    
-    <link rel="stylesheet" href="/css/style.css">
-    
-
-
-
-    <!-- scripts list from _config.yml -->
-    
-    <script src="/js/script.js"></script>
-    
-    <script src="/js/tocbot.min.js"></script>
-    
-
-
-
-    
-    
-        
-    
-
-
-    <!--浏览器搞笑标题-->
-    <script type="text/javascript" src="/js/FunnyTitle.js"></script>
-
-<meta name="generator" content="Hexo 5.1.1"></head>
-<body>
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo"><a href="/">solitude93&#39;s Blog</a></div>
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
-            </div>
-        </div>
-    </nav>
-
-    
-    <nav class="navbar-mobile" id="nav-mobile">
-        <div class="container">
-            <div class="navbar-header">
-                <div>
-                    <a href="/">solitude93&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
-                </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
-            </div>
-            <div class="menu" id="mobile-menu">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-            </div>
-        </div>
-    </nav>
-
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
-        var mobileMenu = document.getElementById("mobile-menu");
-        if(toggleMenu.classList.contains("active")){
-           toggleMenu.classList.remove("active")
-            mobileMenu.classList.remove("active")
-        }else{
-            toggleMenu.classList.add("active")
-            mobileMenu.classList.add("active")
-        }
-    }
-</script>
-        <div class="main">
-            
-
-
-    <div class="container">
-        <div class="post-wrap categories">
-            <h2 class="post-title">-&nbsp;Categories&nbsp;-</h2>
-            <div class="categories-card">
-                
-            </div>
-
-        </div>
+      {% for post in page.posts %}
+        {{ post_template.render(post) }}
+      {% endfor %}
     </div>
 
-        </div>
-        <footer id="footer" class="footer">
-    <div class="copyright" style="line-height: 2rem;">
-    
-        <span>© solitude93 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
-        
-        <div calss = "Statistics" style="height: 30px;">  <!-- 网站统计运行时间-->
-            <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-            <script>
-                var now = new Date(); 
-                function createtime() { 
-                    var grt= new Date("03/27/2020 18:30:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
-                    now.setTime(now.getTime()+250); 
-                    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-                    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-                    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-                    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-                    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-                    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-                    document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
-                    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-                } 
-            setInterval("createtime()",250);
-            </script>
-        </div>
+  </div>
+  {##########################}
+  {### END CATEGORY BLOCK ###}
+  {##########################}
 
-        <div style="margin:0 auto; height: 20px; line-height:20px; width: 164px;">  <!--备案代码-->
-            <img src="http://pm.how2j.online/beian.png" style="float: left; height: 20px; line-height:20px"/>
-            
-            <a target="_blank" href="http://www.beian.gov.cn/portal/index" style="display:inline-block; height:20px;line-height:20px">
-                <p style="height:20px;line-height:20px;margin: 0px 0px 0px 5px;">渝ICP备20001554号</p>
-            </a>
-            <!-- <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022802000393" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-                <img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">渝公网安备 50022802000393号</p>
-            </a> -->
-        </div>
-    </div>
-</footer>
+  {% include '_partials/pagination.swig' %}
 
+{% endblock %}
 
-    </div>
-</body>
-</html>
+{% block sidebar %}
+  {{ sidebar_template.render(false) }}
+{% endblock %}
