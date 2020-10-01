@@ -14,10 +14,12 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-loading-bar.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"how2j.online","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"bounceLeftIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"how2j.online","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"bounceLeftIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
 
@@ -29,15 +31,16 @@ daovoice('update');
  </script>
 
 
-  <meta name="description" content="Alt + d : 2018-09-03-一 Alt + t : 18:44:41">
+
+  <meta name="description" content="文章以加密，输入hello即可查看">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python">
 <meta property="og:url" content="https://how2j.online/posts/a378bd8e/index.html">
 <meta property="og:site_name" content="小二的博客">
-<meta property="og:description" content="Alt + d : 2018-09-03-一 Alt + t : 18:44:41">
+<meta property="og:description" content="文章以加密，输入hello即可查看">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-16T20:36:43.000Z">
-<meta property="article:modified_time" content="2020-09-21T15:29:28.507Z">
+<meta property="article:modified_time" content="2020-09-30T07:33:07.890Z">
 <meta property="article:author" content="solitude93">
 <meta property="article:tag" content="HTML">
 <meta property="article:tag" content=" CSS">
@@ -221,7 +224,7 @@ daovoice('update');
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-21 11:29:28" itemprop="dateModified" datetime="2020-09-21T11:29:28-04:00">2020-09-21</time>
+                <time title="修改时间：2020-09-30 03:33:07" itemprop="dateModified" datetime="2020-09-30T03:33:07-04:00">2020-09-30</time>
               </span>
 
           
@@ -263,24 +266,15 @@ daovoice('update');
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Alt + d : 2018-09-03-一</p>
-<p>Alt + t : 18:44:41</p>
-<p>Alt + n : 2018-09-03 18:44:59</p>
-<h3 id="turtle学习"><a href="#turtle学习" class="headerlink" title="turtle学习"></a>turtle学习</h3><p>使用import对turtle库的引用：</p>
-<p>1.import turtle<br>  turtle.circle(200)</p>
-<ol start="2">
-<li><p>from turele import *<br>circle(200)</p>
-</li>
-<li><p>import turtle as f<br>f.circle(200)</p>
-</li>
-</ol>
-<p>turtle库的使用</p>
-<p>turtle.setup(width,height,startx,strty)</p>
-<p>width: 窗口宽度<br>height: 窗口高度<br>startx: 窗口左侧与屏幕左侧的像素距离<br>starty：窗口顶部与屏幕顶部的像素距离</p>
-<p>turtle函数</p>
-<p>pendown()  放下画笔<br>penup()  提起画笔，与pendown()配对使用<br>pensize(width)  设置画笔线条的粗细为指定大小<br>color() 设置画笔的颜色<br>begin_fill()  填充图形前，调用该方法<br>end_fill() 填充图形结束<br>filling() 返回填充的状态，True为填充，False为未填充<br>clear() 清空当前窗口，但不改变当前画笔的位置<br>reset () 清空当前窗口，并重置位置为默认<br>screensize() 设置画布的长和宽<br>hideturtle() 隐藏画笔turtle形状<br>iscisble() 如果turtle可见，返回True<br>pencolor() 设置画笔的颜色</p>
-<p>forward() 沿当前方向前进指定距离<br>backward()  沿当前反方向后退指定距离<br>right(angle) 向右旋转angle角度<br>left(angle) 向左旋转angle角度<br>goto(x,y) 移动到绝对坐标(x,y)处<br>setx() 将当前x轴移动到指定位置<br>sety() 将当前y轴移动到指定位置<br>setheading(angle)  设置当前朝向为angle角度<br>home() 设置当前画笔位置为原点，朝向东</p>
-
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Hey, password is required here.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="d9350a84e081a63d6c858a629e9b61a822b4ebd65be705b88edbed3ffcfbbc2f">23a9f3dd4469decb3e03b8aa6710a3774ef64c24e5d265eb2dfb4c1d9c4edc20920e8893e96cb67ccf70d737aa61bfaef474c6f6ad527fdb1222d078611b9b6d3a4fb73288d8c1f0d692e1d68c84f7ac9c105e17d66ffb964b61a97d2ddd8f6961e070fd01cdbbf0c2aab29f1b28c9521c6ab5ce7489d933a8d3aaee3d525254c1055b2f1895c40f1cbbc776473b88c0ee97191db99d5bd483aaf338d1d64e1d6d0bc761aea7640a56e0c26a9dbac56eaf5e1455413e242f93fa1520f9151db1de8530be32cdf1f360ed4879caf1ab6705cc5ded037c4be8c66eb1d3efcc269f438099b56dca971d5e745f71ea845883fe36e57064fcd9577f7a60455254638d0648483932128fbee893bde60ca68a856985845827012e23760784ee97b79cb64747fcef7121f7eebec9633901469846aca75e769c5ce4bc8d83a8f03afc9fb010c94553ef3e667e6980794b10b4fddee86d68deedda7d57c9adba485031535f381433b0f943bacd2b96eb4d13ed687a48a6bab5b0a9702d180fa616f1b97c12a820f7fd7c6fc75ef2c7eb1afa89c42c39777926e8736ff0ff6c664093e3df7b54c21e424c8afce7cc45584aa7fc0ea45b3f1d380472a0526f89a2a275bc67e21196b1a360b571128a2990578a5e51405f8e94e639b2a5e54c990ff074520f64dd3d76e2d38e44802abb0e288fb114b5d772c044da8e8d5379055c79ff0a2c6cb0ab3e14e797cbdcf7ab3fcaf7e3425c65c4bcb73ea8b0f6aa94ae412119f9aaec6404bffec5d0ce95149ecff01cac120ae4120ab979e347ad248b71482e39a5474357f609c08fa2a24631b36c780b6e2d2e8a05e3203678ce91835aa679dbf5426e5afbe5967dc6db23867aaed6cb3c731ca3d4c5019fceae26e5bb8a1f9e338817236c3b49f77968cbb943bff0fdad5e4f2e05ba5ae7ca2639b8ad1cc098b98fcaba24a3c16b39d15cb1ec38bbc9f5f65f28be516a34caadefdeffb770618849c47ead39ce40f47c0ef58478d37d9ffb882f51de918dc45c27eecef8ece6532b58e91f99c27f74c581fadcea908c634c4269d1f0932f1b2f357d75b851d4056c10008505f556572b0696a0a0a7933b1e09a5d7d460022e08b3cf6328adc9c2cf731124f908aa809f429a629e94987435a20725264263905eba6b777cb68acf906379019aa0a35739ac6655054c27ec711dad44b094e153d932e6dbac1b92dc5819ea1cd30565a85a1b6432ad532a66455791aeb4eb622b44158b90cc2eadb63e4040e7299cdd6447a567d94ca756ada67f9a86ce1f21278880f12af854b63d5ab54a39260f770cc15db8e48b177254b54817ec73204f57f8f94f645435c9178715409d0b518c7fadd5e9c10be4a327f6712fd5db84f1fa386bed490d8571a7e3118aacad1253334746b7180d53aad3021bf0b91a898b6144a2eba15b8087f0512978433ab2b6cb7a3094ac968a53561e6a4998314bfb5269566284b41747ef93acbaa94d7bf7259487b419e2a9274b1c164b720fcd031ade2ddc9162fb16eb20e03540e1595ad838ad71e532a90ceaa94bba7a2f4f61638dd656985dd80e78d45d655aa95ddbd31ab1a5f80ab8375a9533da8c323276203283c3eff394de1751fe536970fa6141639dd50740cff6a44792a16a8e49860d2df06a9db6369fee52efc8b5181f738dbc76f5575ad1bf8b31f1bf9e02392b34fa7bd730834b4f11a18a5f2efbc69298094a53ea3d47f3e27edfba811c3cd6092e8d37185d39169590e955260e5a312359bcc8edd77c50240117e423c03f458bcefe0685692f069bd99043c7e38e8bfca9df25f3fb65a13a06b9f1c3b1c9caf456628848605f9125a3a73ca4155be20b55272657d61c021086ae502182245105637f335709bd7e65a0ef4d70afabc505d1edb6deec74286060087b315257704a04c9ec4ac1c0362c354f2980646c016f1c5704a6d15c875d2c6db4ee3145650886abdeeecee2b4cee67a81437ee630a3c8fb96fa2884294d433b02be70a2f823762da2f271511ad661287e460fbdad182298d18bde0674f6b7afc88dbaac062d36c20f2464b3e584440674cf5cdcfad7f7db25a8796205fe1aaeb81c3b724e91ea5e966a22bff67022ae3fb2ffa4d122cef330c5b2d627b5191ce40c625efea436dae6f7663dd56c26751a2f27a6703c521423f6a78e2964cd6c5d760e4638502fc818e4edfaf90a1b7d542321f43e68d1370ab02cb3c855a277091fdfe944435bfff4e24066e51da0e958ea84bac23ea6c9c184b40efd6ed7de4d9739ca02c0930ff9a7e429eede94074e9061466d0f208e529ba7efa84b9c58822e720b43e56b021cb7d05317619770a7a083de91cce562150cbc31492756b3e51dfb5f6c2472ccee0cbf1a744e17f742041536b83275baf8c1ff4525ea1e19cc6f7f49d0ebe44061d823d19392</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -375,7 +369,6 @@ daovoice('update');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#turtle学习"><span class="nav-number">1.</span> <span class="nav-text">turtle学习</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -426,7 +419,8 @@ daovoice('update');
         
 
         <!--
-  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">渝ICP备20001554号 </a><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022802000393" rel="noopener" target="_blank">渝公网安备50022802000393号 </a>
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">渝ICP备20001554号 </a>
+      <img src="http://pm.how2j.online/beian.png" style="display: inline-block;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022802000393" rel="noopener" target="_blank">渝公网安备50022802000393号 </a>
   </div>
 -->
 
@@ -455,7 +449,8 @@ daovoice('update');
   <!--由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   -->
   <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">渝ICP备20001554号 </a>
-    <span class="post-meta-divider">|</span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022802000393" rel="noopener" target="_blank">渝公网安备50022802000393号 </a>
+      <span>|</span>
+      <img src="http://pm.how2j.online/beian.png" style="display: inline-block; margin-right:3px; vertical-align: middle"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022802000393" rel="noopener" target="_blank">渝公网安备50022802000393号 </a>
   </div>
   </div>
 
