@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小二的博客</title>
   <icon>https://how2j.online/icon.png</icon>
-  <subtitle>No Princess</subtitle>
+  
   <link href="https://how2j.online/atom.xml" rel="self"/>
   
   <link href="https://how2j.online/"/>
-  <updated>2020-09-30T07:33:07.890Z</updated>
+  <updated>2020-10-02T06:19:47.330Z</updated>
   <id>https://how2j.online/</id>
   
   <author>
-    <name>solitude93</name>
+    <name>How2J</name>
     
   </author>
   
@@ -21,13 +21,17 @@
     <link href="https://how2j.online/posts/a378bd8e/"/>
     <id>https://how2j.online/posts/a378bd8e/</id>
     <published>2020-09-16T20:36:43.000Z</published>
-    <updated>2020-09-30T07:33:07.890Z</updated>
+    <updated>2020-10-02T06:19:47.330Z</updated>
     
     
     <summary type="html">文章以加密，输入hello即可查看</summary>
     
     
     
+    <category term="学习" scheme="https://how2j.online/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Python" scheme="https://how2j.online/tags/Python/"/>
     
   </entry>
   
@@ -39,7 +43,7 @@
     <updated>2020-09-30T02:47:43.916Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;</summary>
     
     
