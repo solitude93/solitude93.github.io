@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小二的博客</title>
   <icon>https://how2j.online/icon.png</icon>
-  
+  <subtitle>你的时间是有限的，所以不要浪费时间活在别人的生命中。--史蒂芬·乔布斯</subtitle>
   <link href="https://how2j.online/atom.xml" rel="self"/>
   
   <link href="https://how2j.online/"/>
-  <updated>2020-10-02T06:19:47.330Z</updated>
+  <updated>2020-11-30T15:58:00.057Z</updated>
   <id>https://how2j.online/</id>
   
   <author>
@@ -15,6 +15,94 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://how2j.online/posts/0/"/>
+    <id>https://how2j.online/posts/0/</id>
+    <published>2020-11-30T15:53:42.983Z</published>
+    <updated>2020-11-30T15:58:00.057Z</updated>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h4&gt;&lt;p&gt;默认间距一般是我们两个元素在输入时就有的，为了阅读性，系统会默认就会隔开一段距离；如果元素是紧紧相连时，这个间距是没有的&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://how2j.online/posts/0/"/>
+    <id>https://how2j.online/posts/0/</id>
+    <published>2020-11-30T15:41:31.475Z</published>
+    <updated>2020-11-30T15:51:44.473Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;Chrome浏览器不支持字体小于12px的解决办法&quot;&gt;&lt;a href=&quot;#Chrome浏览器不支持字体小于12px的解决办法&quot; class=&quot;headerlink&quot; title=&quot;Chrome浏览器不支持字体小于12px的解决办法&quot;&gt;&lt;/a&gt;Chrome浏览器不支持字体小于12px的解决办法&lt;/h3&gt;&lt;h3 id=&quot;第一种&quot;&gt;&lt;a href=&quot;#第一种&quot; class=&quot;headerlink&quot; title=&quot;第一种&quot;&gt;&lt;/a&gt;第一种&lt;/h3&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://how2j.online/posts/0/"/>
+    <id>https://how2j.online/posts/0/</id>
+    <published>2020-11-25T15:10:00.907Z</published>
+    <updated>2020-11-30T15:40:51.552Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;css文字渐变的实现&quot;&gt;&lt;a href=&quot;#css文字渐变的实现&quot; class=&quot;headerlink&quot; title=&quot;css文字渐变的实现&quot;&gt;&lt;/a&gt;css文字渐变的实现&lt;/h3&gt;&lt;h6 id=&quot;原理：color把文字变透明，用background-image设置渐变作为背景，用background-clip来裁切背景，裁切的范围正好是文字的显示范围。&quot;&gt;&lt;a href=&quot;#原理：color把文字变透明，用background-image设置渐变作为背景，用background-clip来裁切背景，裁切的范围正好是文字的显示范围。&quot; class=&quot;headerlink&quot; title=&quot;原理：color把文字变透明，用background-image设置渐变作为背景，用background-clip来裁切背景，裁切的范围正好是文字的显示范围。&quot;&gt;&lt;/a&gt;原理：color把文字变透明，用background-image设置渐变作为背景，用background-clip来裁切背景，裁切的范围正好是文字的显示范围。&lt;/h6&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://how2j.online/posts/0/"/>
+    <id>https://how2j.online/posts/0/</id>
+    <published>2020-10-31T09:28:40.723Z</published>
+    <updated>2020-10-31T09:35:14.831Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th&gt;符号&lt;/th&gt;&lt;th&gt;解释&lt;/th&gt;&lt;th&gt;示例&lt;/th&gt;&lt;th&gt;说明&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python-Django学习</title>
+    <link href="https://how2j.online/posts/2a2ba58f/"/>
+    <id>https://how2j.online/posts/2a2ba58f/</id>
+    <published>2020-10-06T07:34:19.452Z</published>
+    <updated>2020-10-06T11:33:21.552Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;基本介绍&lt;br&gt;Django 是一个由 Python 编写的一个开放源代码的 Web 应用框架。&lt;br&gt;使用 Django，只要很少的代码，Python 的程序开发人员就可以轻松地完成一个正式网站所需要的大部分内容，并进一步开发出全功能的 Web 服务 Django 本身基于 MVC 模型，即 Model（模型）+ View（视图）+ Controller（控制器）设计模式，MVC 模式使后续对程序的修改和扩展简化，并且使程序某一部分的重复利用成为可能。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://how2j.online/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Python" scheme="https://how2j.online/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python</title>
